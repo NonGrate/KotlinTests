@@ -1,0 +1,16 @@
+apply plugin: 'idea'
+apply plugin: 'java-library'
+apply plugin: "kotlin"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.4-3"
+
+    testImplementation "junit:junit:4.12"
+    testImplementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.4-3"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
